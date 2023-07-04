@@ -2,7 +2,7 @@
 
 English:
 
-Very simple rental with qtarget (ox) and oxlib, for more information, visit Config
+Very simple rent car with qtarget (ox) and oxlib, for more information, visit Config
 
 Serbian:
 
