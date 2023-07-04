@@ -1,3 +1,5 @@
+ESX = exports["es_extended"]:getSharedObject()
+
 RegisterNetEvent('naplata:gradfuto')
 AddEventHandler('naplata:gradfuto', function()
     local xPlayer = ESX.GetPlayerFromId(source)
