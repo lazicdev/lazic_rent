@@ -1,3 +1,5 @@
+ESX = exports["es_extended"]:getSharedObject()
+
 RegisterNetEvent('lazic:rentgrad1')
 AddEventHandler('lazic:rentgrad1', function(source)
 	local coords = Config.RentGradSpawnCoords
