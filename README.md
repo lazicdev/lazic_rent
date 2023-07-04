@@ -6,7 +6,7 @@ Very simple rental with qtarget (ox) and oxlib, for more information, visit Conf
 
 Serbian:
 
-Jako prost rent sa qtargetom (ox) i oxlib, za vise informacija visit posetite Config
+Jako prost rent sa qtargetom (ox) i oxlib, za vise informacija, posetite Config
 
 Dependecy / Potrebno :
 
