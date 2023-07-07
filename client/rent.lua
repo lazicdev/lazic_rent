@@ -54,12 +54,12 @@ AddEventHandler('lazic:povuciserverstranu3', function()
     TriggerServerEvent('naplata:gradfaggio')
 end)
 
-exports['qtarget']:AddBoxZone("GradRent",vector3(110.51, -1090.61, 29.29), 3.4, 3.4, {
+exports['qtarget']:AddBoxZone("GradRent",Config.TargetGradRentCoords, 3.4, 3.4, {
     name="GradRent",
-    heading=127.55,
+    heading=Config.TargetGradRentHeading,
     debugPoly=false,
-    minZ=29.29,
-    maxZ=30.29
+    minZ=Config.TargetGradMinz,
+    maxZ=Config.TargetGradMaxz
 	}, 
   	{
     options = {
@@ -161,12 +161,12 @@ AddEventHandler('lazic:povuciserverstranusandy3', function()
     TriggerServerEvent('naplata:sandyfaggio')
 end)
 
-exports['qtarget']:AddBoxZone("SandyRent",vector3(1737.95, 3709.01, 34.20), 3.4, 3.4, {
+exports['qtarget']:AddBoxZone("SandyRent",Config.TargetSandyRentCoords, 3.4, 3.4, {
     name="SandyRent",
-    heading=127.55,
+    heading=Config.TargetSandyRentHeading,
     debugPoly=false,
-    minZ=34.20,
-    maxZ=35.20
+    minZ=Config.TargetSandyMinz,
+    maxZ=Config.TargetSandyMaxz
 	}, 
   	{
     options = {
@@ -268,12 +268,12 @@ AddEventHandler('lazic:povuciserverstranupaleto3', function()
     TriggerServerEvent('naplata:paletofaggio')
 end)
 
-exports['qtarget']:AddBoxZone("PaletoRent",vector3(96.13, 6363.04, 31.36), 3.4, 3.4, {
+exports['qtarget']:AddBoxZone("PaletoRent",Config.TargetPaletoRentCoords, 3.4, 3.4, {
     name="PaletoRent",
-    heading=127.55,
+    heading=Config.TargetPaletoRentHeading,
     debugPoly=false,
-    minZ=31.36,
-    maxZ=32.36
+    minZ=Config.TargetPaletoMinz,
+    maxZ=Config.TargetPaletoMaxz
 	}, 
   	{
     options = {
