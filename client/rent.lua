@@ -41,17 +41,29 @@ end)
 
 RegisterNetEvent('lazic:povuciserverstranu1')
 AddEventHandler('lazic:povuciserverstranu1', function()
-    TriggerServerEvent('naplata:gradfuto')
+    if ESX.Game.IsSpawnPointClear(Config.RentGradSpawnCoords, 5) then
+        TriggerServerEvent('naplata:gradfuto')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 RegisterNetEvent('lazic:povuciserverstranu2')
 AddEventHandler('lazic:povuciserverstranu2', function()
-    TriggerServerEvent('naplata:gradsultan')
+    if ESX.Game.IsSpawnPointClear(Config.RentGradSpawnCoords, 5) then
+        TriggerServerEvent('naplata:gradsultan')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 RegisterNetEvent('lazic:povuciserverstranu3')
 AddEventHandler('lazic:povuciserverstranu3', function()
-    TriggerServerEvent('naplata:gradfaggio')
+    if ESX.Game.IsSpawnPointClear(Config.RentGradSpawnCoords, 5) then
+        TriggerServerEvent('naplata:gradfaggio')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 exports['qtarget']:AddBoxZone("GradRent",Config.TargetGradRentCoords, 3.4, 3.4, {
@@ -148,17 +160,29 @@ end)
 
 RegisterNetEvent('lazic:povuciserverstranusandy1')
 AddEventHandler('lazic:povuciserverstranusandy1', function()
-    TriggerServerEvent('naplata:sandyfuto')
+    if ESX.Game.IsSpawnPointClear(Config.RentSandySpawnCoords, 5) then
+        TriggerServerEvent('naplata:sandyfuto')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 RegisterNetEvent('lazic:povuciserverstranusandy2')
 AddEventHandler('lazic:povuciserverstranusandy2', function()
-    TriggerServerEvent('naplata:sandysultan')
+    if ESX.Game.IsSpawnPointClear(Config.RentSandySpawnCoords, 5) then
+        TriggerServerEvent('naplata:sandysultan')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 RegisterNetEvent('lazic:povuciserverstranusandy3')
 AddEventHandler('lazic:povuciserverstranusandy3', function()
-    TriggerServerEvent('naplata:sandyfaggio')
+    if ESX.Game.IsSpawnPointClear(Config.RentSandySpawnCoords, 5) then
+        TriggerServerEvent('naplata:sandyfaggio')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 exports['qtarget']:AddBoxZone("SandyRent",Config.TargetSandyRentCoords, 3.4, 3.4, {
@@ -255,17 +279,29 @@ end)
 
 RegisterNetEvent('lazic:povuciserverstranupaleto1')
 AddEventHandler('lazic:povuciserverstranupaleto1', function()
-    TriggerServerEvent('naplata:paletofuto')
+    if ESX.Game.IsSpawnPointClear(Config.RentPaletoSpawnCoords, 5) then
+        TriggerServerEvent('naplata:paletofuto')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 RegisterNetEvent('lazic:povuciserverstranupaleto2')
 AddEventHandler('lazic:povuciserverstranupaleto2', function()
-    TriggerServerEvent('naplata:paletosultan')
+    if ESX.Game.IsSpawnPointClear(Config.RentPaletoSpawnCoords, 5) then
+        TriggerServerEvent('naplata:paletosultan')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 RegisterNetEvent('lazic:povuciserverstranupaleto3')
 AddEventHandler('lazic:povuciserverstranupaleto3', function()
-    TriggerServerEvent('naplata:paletofaggio')
+    if ESX.Game.IsSpawnPointClear(Config.RentPaletoSpawnCoords, 5) then
+        TriggerServerEvent('naplata:paletofaggio')
+    else
+        exports['mythic_notify']:DoHudText('error', 'Parking je blokiran')
+    end
 end)
 
 exports['qtarget']:AddBoxZone("PaletoRent",Config.TargetPaletoRentCoords, 3.4, 3.4, {
