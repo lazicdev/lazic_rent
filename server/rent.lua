@@ -26,9 +26,15 @@ AddEventHandler('rent:naplati', function(locationName, vehicleIndex)
         
         TriggerClientEvent('rent:spawnVehicle', src, locationName, vozilo.model)
     else
-        TriggerClientEvent('mythic_notify:client:SendAlert', src, { 
-            type = 'error', 
-            text = 'Nemate dovoljno novca' 
+        -- TriggerClientEvent('mythic_notify:client:SendAlert', src, { 
+        --     type = 'error', 
+        --     text = 'Nemate dovoljno novca' 
+        -- })
+        TriggerClientEvent('ox_lib:notify', src, {
+            type = 'error',
+            description = 'Nemate dovoljno novca',
+            duration = 3000
         })
     end
 end)
+
