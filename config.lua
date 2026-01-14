@@ -1,66 +1,68 @@
 Config = {}
+
 Config.RentLicensePlate = 'RENT'
 Config.Placanje = 'cash' -- cash or bank
+Config.SpawnCheckRadius = 5.0
 
--- RENT U GRADU --
+Config.Locations = {
+    Grad = {
+        RentCoords = vector3(110.51, -1090.61, 29.29),
+        RentHeading = 127.55,
+        RentMinz = 29.29,
+        RentMaxz = 30.29,
+        SpawnCoords = vector3(117.54, -1082.17, 28.57),
+        SpawnHeading = 0.0,
+        Blip = {x = 110.51, y = -1090.61, z = 28.29, title = "Rent A Car", colour = 2, id = 225}
+    },
+    Sandy = {
+        RentCoords = vector3(1737.95, 3709.01, 34.20),
+        RentHeading = 127.55,
+        RentMinz = 34.20,
+        RentMaxz = 35.20,
+        SpawnCoords = vector3(1728.15, 3715.10, 33.54),
+        SpawnHeading = 22.67,
+        Blip = {x = 1737.95, y = 3709.01, z = 33.20, title = "Rent A Car", colour = 2, id = 225}
+    },
+    Paleto = {
+        RentCoords = vector3(96.13, 6363.04, 31.36),
+        RentHeading = 127.55,
+        RentMinz = 31.36,
+        RentMaxz = 32.36,
+        SpawnCoords = vector3(94.94, 6372.73, 30.61),
+        SpawnHeading = 11.33,
+        Blip = {x = 96.13, y = 6363.04, z = 30.36, title = "Rent A Car", colour = 2, id = 225}
+    }
+}
 
-Config.RentGradSpawnCoords = vector3(117.54, -1082.17, 28.57)
-Config.RentGradHeading = 0.0
-Config.RentGradVozilo1 = 'futo'
-Config.RentGradVozilo2 = 'sultan'
-Config.RentGradVozilo3 = 'faggio'
-
--- RENT U SANDY --
-
-Config.RentSandySpawnCoords = vector3(1728.15, 3715.10, 33.54)
-Config.RentSandyHeading = 22.67
-Config.RentSandyVozilo1 = 'futo'
-Config.RentSandyVozilo2 = 'sultan'
-Config.RentSandyVozilo3 = 'faggio'
-
--- RENT U PALETO --
-
-Config.RentPaletoSpawnCoords = vector3(94.94, 6372.73, 30.61)
-Config.RentPaletoHeading = 11.33
-Config.RentPaletoVozilo1 = 'futo'
-Config.RentPaletoVozilo2 = 'sultan'
-Config.RentPaletoVozilo3 = 'faggio'
-
--- TARGET --
-
-Config.TargetGradRentCoords = vector3(110.51, -1090.61, 29.29)
-Config.TargetGradRentHeading = 127.55
-Config.TargetGradMinz = 29.29
-Config.TargetGradMaxz = 30.29
-
-
-Config.TargetSandyRentCoords = vector3(1737.95, 3709.01, 34.20)
-Config.TargetSandyRentHeading = 127.55
-Config.TargetSandyMinz = 34.20
-Config.TargetSandyMaxz = 35.20
-
-
-Config.TargetPaletoRentCoords = vector3(96.13, 6363.04, 31.36)
-Config.TargetPaletoRentHeading = 127.55
-Config.TargetPaletoMinz = 31.36
-Config.TargetPaletoMaxz = 32.36
-
--- PARE --
-
-Config.Vozilo1Naplata = 500
-Config.Vozilo2Naplata = 700
-Config.Vozilo3Naplata = 300
-
--- BLIP --
-
-Config.BlipGrad = {title="Rent A Car", colour=2, id=225, x = 110.51, y = -1090.61, z = 28.29}
-Config.BlipSandy = {title="Rent A Car", colour=2, id=225, x = 1737.95, y = 3709.01, z = 33.20}
-Config.BlipPaleto = {title="Rent A Car", colour=2, id=225, x = 96.13, y = 6363.04, z = 30.36}
-
--- NPC --
+Config.Vozila = {
+    {
+        name = 'futo',
+        model = 'futo',
+        label = 'Futo',
+        cena = 500,
+        icon = 'fas fa-car',
+        image = 'https://gtacars.net/images/8f09ecdb4bf6c5c1a64e10a8d9c92456'
+    },
+    {
+        name = 'sultan',
+        model = 'sultan',
+        label = 'Sultan',
+        cena = 700,
+        icon = 'fas fa-car',
+        image = 'https://gtacars.net/images/f0d3d7573097ca3ece6f1ee26b81c71d'
+    },
+    {
+        name = 'faggio',
+        model = 'faggio',
+        label = 'Faggio',
+        cena = 300,
+        icon = 'fas fa-motorcycle',
+        image = 'https://gtacars.net/images/490d53928ed54a3b2c656681ab98159c'
+    }
+}
 
 Config.Pedovi = {
-    {110.51, -1090.61, 28.29, "Ped", 5.66, "a_m_y_eastsa_02", "a_m_y_eastsa_02"},
-    {1737.95, 3709.01, 33.20, "Ped", 22.67, "a_m_y_eastsa_02", "a_m_y_eastsa_02"},
-    {96.13, 6363.04, 30.36, "Ped", 22.67, "a_m_y_eastsa_02", "a_m_y_eastsa_02"},
+    {110.51, -1090.61, 29.29, 5.66, "a_m_y_eastsa_02"},
+    {1737.95, 3709.01, 34.20, 22.67, "a_m_y_eastsa_02"},
+    {96.13, 6363.04, 31.36, 22.67, "a_m_y_eastsa_02"},
 }
